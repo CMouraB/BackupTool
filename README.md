@@ -1,45 +1,57 @@
-# BackupTool v1.0
+# BackupTool
 
-A robust and multi-language incremental backup tool for Windows, powered by the **Robocopy** engine to ensure maximum performance and reliability. Designed to be simple, fast, and secure.
+![Version](https://img.shields.io/badge/version-1.0-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-## 🚀 Features
+**BackupTool** is a robust, portable, and high-performance backup utility for Windows. Built as a GUI wrapper for the native **Robocopy** engine, it allows users to perform incremental backups and full drive mirroring with professional efficiency and zero installation.
 
-* **Robocopy Engine:** Utilizes native Windows technology for high-speed transfers with multi-threading support.
-* **Incremental Backup:** Compares files by date and size, copying only what has been changed.
-* **Mirror Mode:** Option for exact synchronization, removing files in the destination that no longer exist in the source.
-* **Multi-language Interface:** Native support for 11 languages:
-    * Portuguese, English, Spanish, German, French, Italian, Russian, Hindi, Arabic, Japanese, and Chinese.
-* **Auto-Detection:** Automatically identifies the operating system language on first launch.
-* **Real-Time Log:** Progress visualization directly within the application interface.
-* **Data Persistence:** Automatically saves your last path settings and preferences.
-* **Drive Security:** Special handling for full drive backups (e.g., D:\ to E:\), automatically ignoring system folders and the recycle bin.
+> 🚀 **Available on Microsoft Store** (Coming Soon)
 
-## 🛠️ Requirements
+## 🌟 Key Features
 
-* Windows 10 or 11.
-* PowerShell 5.1 or higher (native to Windows).
-* Administrator Privileges (recommended for full drive backups).
+* **⚡ High-Performance Engine:** Powered by Windows native Robocopy with multi-threading support (`/MT:16`).
+* **🌍 Multi-Language Interface:** Native support for **11 languages** (English, Portuguese, Spanish, German, French, Italian, Russian, Hindi, Arabic, Japanese, Chinese).
+* **🛡️ Drive Safety:** Automatically ignores system protected folders (like `System Volume Information`) when copying entire drives.
+* **⚙️ Smart Modes:**
+    * **Default:** Incremental copy (only new or changed files).
+    * **Mirror:** Full synchronization (deletes files in destination that are not in source).
+* **🚀 Direct Execution:** Optimized for speed, starting the backup process immediately without pre-calculation delays.
+* **🔒 Privacy Focused:** All processing is local. No data leaves your computer.
 
-## 📦 How to Use the Executable
+## 📥 Download & Installation
 
-1.  Download the `BackupTool.exe` file from the [Releases](link-to-your-release) tab.
-2.  Run the application (Windows SmartScreen may show an alert for new apps; click "More info" > "Run anyway").
-3.  Select the **Source** folder or drive.
-4.  Select the **Destination** folder or drive.
-5.  Click **Start Backup**.
-6.  Once finished, use the **Open Log** button to check the details of the operation.
+### Option 1: Portable (Recommended for Developers)
+1.  Go to the [Releases](https://github.com/CMouraB/BackupTool/releases) page.
+2.  Download `BackupTool.exe`.
+3.  Run it directly (No installation required).
 
-## 🏗️ Project Structure
+### Option 2: Installer (Windows)
+Download the `BackupTool_Setup.exe` for a standard installation with Start Menu shortcuts.
 
-* `/src`: PowerShell source code (`.ps1`).
-* `/assets`: Icons and screenshots.
-* `settings.json`: Automatically generated file to save user preferences.
+## 🛠️ Technical Requirements
 
-## 📝 License
+* Windows 10 or Windows 11 (x64).
+* PowerShell 5.1 or higher (Pre-installed on Windows).
+* **Administrator Privileges** are recommended for full drive backups (e.g., `D:\` to `E:\`).
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+## 🤝 Support the Project
 
-## 👨‍💻 Developer
+This project is open-source and free. If it saved your files or your time, consider buying me a coffee!
 
-Developed by **Moura**.
-🌐 [moura.in.net](http://moura.in.net)
+<a href="https://www.paypal.com/donate/?business=AJQHMVMPV9APS&no_recurring=0&currency_code=USD">
+  <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate with PayPal" />
+</a>
+
+## 📄 Privacy Policy
+
+We respect your privacy. This application functions offline and does not collect telemetry.
+Read our full [Privacy Policy](https://moura.in.net/backuptool-privacy.html).
+
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+**Developed by Moura**
+[moura.in.net](http://moura.in.net)
