@@ -1,4 +1,4 @@
-# Backup Tool v1.0
+# BackupTool v1.0
 
 A robust and multi-language incremental backup tool for Windows, powered by the **Robocopy** engine to ensure maximum performance and reliability. Designed to be simple, fast, and secure.
 
