@@ -1,6 +1,3 @@
-# BackupTool
-A simple app to backup your files in a storage!
-
 # Backup Tool v1.0
 
 A robust and multi-language incremental backup tool for Windows, powered by the **Robocopy** engine to ensure maximum performance and reliability. Designed to be simple, fast, and secure.
